@@ -85,7 +85,6 @@ jobs:
         with:
           repository: 'brunoo-gq/cypress15'
           token: ${{ secrets.MI_GITHUB_TOKEN_REPOS }}
-          path: 'cypress-tests'
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
