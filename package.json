@@ -11,12 +11,15 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "CI=true react-scripts test --watch=false --runInBand",
     "eject": "react-scripts eject",
-        "lint": "eslint src/**/*.js src/**/*.jsx",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
     "lint:fix": "npm run lint --fix"
   },
   "eslintConfig": {
